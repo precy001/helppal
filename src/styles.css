@@ -89,3 +89,37 @@ html[data-theme="dark"] .category-option,html[data-theme="dark"] .store-option,h
 html[data-theme="dark"] .btn-quiet,html[data-theme="dark"] .btn-outline{color:#edf4ee;border-color:#526157}
 html[data-theme="dark"] .field-label,html[data-theme="dark"] label{color:#e0e9e2}
 @media(max-width:520px){.store-tabs{gap:5px}.store-tab{font-size:12px;padding:9px 4px;min-height:44px}.single-category .category-option{padding:15px}.errand-description{min-height:160px}}
+
+/* Final contrast pass for both customer and agent workspaces in dark mode. */
+html[data-theme="dark"] .agent-card-info>b,
+html[data-theme="dark"] .agent-card-info>small,
+html[data-theme="dark"] .request-card,
+html[data-theme="dark"] .request-card b,
+html[data-theme="dark"] .request-card small,
+html[data-theme="dark"] .request-price,
+html[data-theme="dark"] .performance-line,
+html[data-theme="dark"] .setting-row b,
+html[data-theme="dark"] .setting-row small,
+html[data-theme="dark"] .profile-details b,
+html[data-theme="dark"] .profile-details span,
+html[data-theme="dark"] .store-option small,
+html[data-theme="dark"] .category-option small,
+html[data-theme="dark"] .order-info strong,
+html[data-theme="dark"] .order-end>b {
+  color: #e8f0ea;
+}
+html[data-theme="dark"] .store-option,
+html[data-theme="dark"] .category-option,
+html[data-theme="dark"] .request-card,
+html[data-theme="dark"] .agent-card,
+html[data-theme="dark"] .items-detail,
+html[data-theme="dark"] .timeline-panel,
+html[data-theme="dark"] .route-panel,
+html[data-theme="dark"] .cost-panel {
+  background: #202923;
+  border-color: #46544a;
+}
+html[data-theme="dark"] .category-option.chosen,
+html[data-theme="dark"] .store-option.chosen {
+  border-color: #79ad87;
+}
