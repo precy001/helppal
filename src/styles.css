@@ -68,3 +68,24 @@ html[data-theme="dark"] .get-started-panel{background:radial-gradient(circle at 
 .agent-overview-layout .agent-right-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);align-items:stretch}
 .agent-errands-stats{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 18px}
 @media(max-width:760px){.agent-overview-layout .agent-right-panel{grid-template-columns:1fr}.agent-errands-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* HelpPal overview 2: simplified errand builder and clearer dark mode */
+.single-category{grid-template-columns:minmax(0,1fr);max-width:620px}
+.single-category .category-option{min-height:92px;padding:20px}
+.single-category .category-option b{font-size:17px}
+.btn-large{min-height:48px;padding:13px 20px;font-size:15px}
+.store-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:18px 0 14px}
+.store-tab{min-height:48px;border:1px solid var(--line);border-radius:12px;background:var(--surface);font-weight:700;color:var(--ink);padding:10px 8px}
+.store-tab.active{background:var(--mint);border-color:var(--green2);color:var(--green)}
+.errand-description{min-height:180px;resize:vertical;line-height:1.65;white-space:pre-wrap}
+.field-hint{font-size:12px;margin-top:7px}
+html[data-theme="dark"]{--ink:#f1f5f2;--muted:#b8c4bc;--line:#3b4840;--surface:#202923;--warm:#151b17;--mint:#263d2d;color:var(--ink);background:#151b17}
+html[data-theme="dark"] body,html[data-theme="dark"] .app-shell{background:#151b17;color:#f1f5f2}
+html[data-theme="dark"] p,html[data-theme="dark"] small,html[data-theme="dark"] .muted,html[data-theme="dark"] .field-hint{color:#c0cbc3}
+html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] textarea,html[data-theme="dark"] .field-control,html[data-theme="dark"] .store-tab{background:#202923;color:#f4f7f4;border-color:#46544a}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#aebbb2;opacity:1}
+html[data-theme="dark"] .store-tab.active{background:#294d34;border-color:#6b9b77;color:#f2fff4}
+html[data-theme="dark"] .category-option,html[data-theme="dark"] .store-option,html[data-theme="dark"] .panel,html[data-theme="dark"] .review-card,html[data-theme="dark"] .review-section{background:#202923;color:#f1f5f2;border-color:#3b4840}
+html[data-theme="dark"] .btn-quiet,html[data-theme="dark"] .btn-outline{color:#edf4ee;border-color:#526157}
+html[data-theme="dark"] .field-label,html[data-theme="dark"] label{color:#e0e9e2}
+@media(max-width:520px){.store-tabs{gap:5px}.store-tab{font-size:12px;padding:9px 4px;min-height:44px}.single-category .category-option{padding:15px}.errand-description{min-height:160px}}
